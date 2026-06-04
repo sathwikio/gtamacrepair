@@ -1,6 +1,6 @@
 export const SITE = {
   name: "GTA Mac Repair",
-  tagline: "We specialize in Mac repair  -  only.",
+  tagline: "We specialize in Mac repair. Only.",
   phone: "416-887-6847",
   phoneAlt: "647-560-0659",
   email: "Info@GTAMacRepair.com",

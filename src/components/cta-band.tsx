@@ -10,7 +10,7 @@ export function CtaBand() {
           <div>
             <h2 className="text-3xl font-semibold md:text-4xl">Not sure what's wrong?</h2>
             <p className="mt-3 max-w-xl text-background/70">
-              Free diagnostics within one business day. No fix, no charge  -  every repair backed by a 90-day warranty.
+              Free diagnostics within one business day. No fix, no charge. Every repair backed by a 90-day warranty.
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
