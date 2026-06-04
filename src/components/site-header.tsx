@@ -8,9 +8,12 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/75 backdrop-blur-xl">
       <div className="container-px mx-auto flex h-16 max-w-7xl items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 font-semibold tracking-tight">
-          <span className="grid size-8 place-items-center rounded-xl bg-foreground text-background text-sm font-bold"></span>
-          <span>{SITE.name}</span>
+        <Link to="/" className="flex items-center">
+          <img
+            src="/d7262b_b8e61b0dc41949b387ff3ddb6b34ac85~mv2_d_9543_2736_s_4_2.png"
+            alt={SITE.name}
+            className="h-10 w-auto md:h-12"
+          />
         </Link>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
           {NAV.map((n) => (
