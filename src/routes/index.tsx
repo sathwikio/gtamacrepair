@@ -4,13 +4,15 @@ import { ArrowRight, Phone, ShieldCheck, Clock, MapPin, Wrench, Cpu, HardDrive, 
 import { PageShell } from "@/components/page-shell";
 import { CtaBand } from "@/components/cta-band";
 import { SITE, SERVICES } from "@/lib/site";
+import imacImg from "@/assets/imac.png";
+import macbookAirImg from "@/assets/macbook-air.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "GTA Mac Repair — Mac specialists across the Greater Toronto Area" },
+      { title: "GTA Mac Repair - Mac specialists across the Greater Toronto Area" },
       { name: "description", content: "Mac-only repair specialists with 12+ years of experience. Free diagnostics, 90-day warranty, no fix no charge. 8 locations across the GTA." },
-      { property: "og:title", content: "GTA Mac Repair — Mac specialists across the GTA" },
+      { property: "og:title", content: "GTA Mac Repair - Mac specialists across the GTA" },
       { property: "og:description", content: "Free diagnostics. 90-day warranty. No fix, no charge. 8 GTA locations." },
     ],
   }),
@@ -24,24 +26,47 @@ function Index() {
     <PageShell>
       {/* HERO */}
       <section className="container-px mx-auto max-w-7xl pt-20 pb-16 md:pt-32 md:pb-24">
-        <div className="flex flex-col items-start gap-6">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
-            <span className="size-1.5 rounded-full bg-emerald-500" /> Open today · Free diagnostics
-          </span>
-          <h1 className="max-w-4xl text-5xl font-semibold leading-[1.02] tracking-tight md:text-7xl">
-            We specialize in Mac repair. <span className="text-muted-foreground">Only.</span>
-          </h1>
-          <p className="max-w-2xl text-lg text-muted-foreground md:text-xl">
-            Twelve years of focused experience. Eight locations across the Greater Toronto Area.
-            Free diagnostic, transparent quote, 90-day warranty — and no fix, no charge.
-          </p>
-          <div className="mt-2 flex flex-wrap gap-3">
-            <Link to="/book-online" className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background hover:opacity-90">
-              Book a free diagnostic <ArrowRight className="size-4" />
-            </Link>
-            <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-medium hover:bg-muted">
-              <Phone className="size-4" /> {SITE.phone}
-            </a>
+        <div className="grid items-center gap-12 md:grid-cols-2 md:gap-8">
+          <div className="flex flex-col items-start gap-6">
+            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
+              <span className="size-1.5 rounded-full bg-emerald-500" /> Open today · Free diagnostics
+            </span>
+            <h1 className="max-w-4xl text-5xl font-semibold leading-[1.02] tracking-tight md:text-7xl">
+              We specialize in Mac repair. <span className="text-muted-foreground">Only.</span>
+            </h1>
+            <p className="max-w-2xl text-lg text-muted-foreground md:text-xl">
+              Twelve years of focused experience. Eight locations across the Greater Toronto Area.
+              Free diagnostic, transparent quote, 90-day warranty. No fix, no charge.
+            </p>
+            <div className="mt-2 flex flex-wrap gap-3">
+              <Link to="/book-online" className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background hover:opacity-90">
+                Book a free diagnostic <ArrowRight className="size-4" />
+              </Link>
+              <a href={`tel:${SITE.phone}`} className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-medium hover:bg-muted">
+                <Phone className="size-4" /> {SITE.phone}
+              </a>
+            </div>
+          </div>
+
+          <div className="relative hidden md:block">
+            <div className="relative mx-auto w-full max-w-lg">
+              <img
+                src={imacImg}
+                alt="Apple iMac"
+                width={400}
+                height={400}
+                className="relative z-10 mx-auto drop-shadow-2xl"
+                loading="eager"
+              />
+              <img
+                src={macbookAirImg}
+                alt="Apple MacBook Air"
+                width={320}
+                height={320}
+                className="absolute -bottom-8 -right-4 z-20 w-2/3 drop-shadow-xl"
+                loading="eager"
+              />
+            </div>
           </div>
         </div>
 
@@ -67,7 +92,7 @@ function Index() {
           <div>
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">Every Mac. Every repair.</h2>
             <p className="mt-3 max-w-2xl text-muted-foreground">
-              From spilled coffee to dead logic boards, we fix MacBook, MacBook Pro, MacBook Air, iMac, and Mac mini — 2009 through today.
+              From spilled coffee to dead logic boards, we fix MacBook, MacBook Pro, MacBook Air, iMac, and Mac mini. 2009 through today.
             </p>
           </div>
           <Link to="/our-services" className="hidden shrink-0 text-sm text-muted-foreground hover:text-foreground md:inline-flex">
@@ -98,7 +123,7 @@ function Index() {
           {[
             { n: "01", t: "Get in touch", d: "Call, email, or book online. Tell us about your Mac." },
             { n: "02", t: "Free diagnostic", d: "We diagnose within one business day and send a transparent quote." },
-            { n: "03", t: "Repaired & returned", d: "We finish the repair, you pick up or we ship — covered by a 90-day warranty." },
+            { n: "03", t: "Repaired & returned", d: "We finish the repair, you pick up or we ship. Covered by a 90-day warranty." },
           ].map((s) => (
             <div key={s.n} className="rounded-3xl border border-border bg-card p-8">
               <div className="text-sm font-mono text-muted-foreground">{s.n}</div>
@@ -115,7 +140,7 @@ function Index() {
           <div>
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">Why Mac owners across the GTA choose us.</h2>
             <p className="mt-4 text-muted-foreground">
-              We aren't a generalist computer shop. Macs are all we do — and that focus shows up in every repair we send out the door.
+              We aren't a generalist computer shop. Macs are all we do. That focus shows up in every repair we send out the door.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
