@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as VirusRemovalRouteImport } from './routes/virus-removal'
 import { Route as TrackpadTouchpadReplacementRouteImport } from './routes/trackpad-touchpad-replacement'
 import { Route as SpeakerReplacementRouteImport } from './routes/speaker-replacement'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ScreenReplacementRouteImport } from './routes/screen-replacement'
 import { Route as ScreenLcdReplacementRouteImport } from './routes/screen-lcd-replacement'
 import { Route as RamReplacementRouteImport } from './routes/ram-replacement'
@@ -54,6 +55,11 @@ const TrackpadTouchpadReplacementRoute =
 const SpeakerReplacementRoute = SpeakerReplacementRouteImport.update({
   id: '/speaker-replacement',
   path: '/speaker-replacement',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ScreenReplacementRoute = ScreenReplacementRouteImport.update({
@@ -221,6 +227,7 @@ export interface FileRoutesByFullPath {
   '/ram-replacement': typeof RamReplacementRoute
   '/screen-lcd-replacement': typeof ScreenLcdReplacementRoute
   '/screen-replacement': typeof ScreenReplacementRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/speaker-replacement': typeof SpeakerReplacementRoute
   '/trackpad-touchpad-replacement': typeof TrackpadTouchpadReplacementRoute
   '/virus-removal': typeof VirusRemovalRoute
@@ -253,6 +260,7 @@ export interface FileRoutesByTo {
   '/ram-replacement': typeof RamReplacementRoute
   '/screen-lcd-replacement': typeof ScreenLcdReplacementRoute
   '/screen-replacement': typeof ScreenReplacementRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/speaker-replacement': typeof SpeakerReplacementRoute
   '/trackpad-touchpad-replacement': typeof TrackpadTouchpadReplacementRoute
   '/virus-removal': typeof VirusRemovalRoute
@@ -286,6 +294,7 @@ export interface FileRoutesById {
   '/ram-replacement': typeof RamReplacementRoute
   '/screen-lcd-replacement': typeof ScreenLcdReplacementRoute
   '/screen-replacement': typeof ScreenReplacementRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/speaker-replacement': typeof SpeakerReplacementRoute
   '/trackpad-touchpad-replacement': typeof TrackpadTouchpadReplacementRoute
   '/virus-removal': typeof VirusRemovalRoute
@@ -320,6 +329,7 @@ export interface FileRouteTypes {
     | '/ram-replacement'
     | '/screen-lcd-replacement'
     | '/screen-replacement'
+    | '/sitemap.xml'
     | '/speaker-replacement'
     | '/trackpad-touchpad-replacement'
     | '/virus-removal'
@@ -352,6 +362,7 @@ export interface FileRouteTypes {
     | '/ram-replacement'
     | '/screen-lcd-replacement'
     | '/screen-replacement'
+    | '/sitemap.xml'
     | '/speaker-replacement'
     | '/trackpad-touchpad-replacement'
     | '/virus-removal'
@@ -384,6 +395,7 @@ export interface FileRouteTypes {
     | '/ram-replacement'
     | '/screen-lcd-replacement'
     | '/screen-replacement'
+    | '/sitemap.xml'
     | '/speaker-replacement'
     | '/trackpad-touchpad-replacement'
     | '/virus-removal'
@@ -417,6 +429,7 @@ export interface RootRouteChildren {
   RamReplacementRoute: typeof RamReplacementRoute
   ScreenLcdReplacementRoute: typeof ScreenLcdReplacementRoute
   ScreenReplacementRoute: typeof ScreenReplacementRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SpeakerReplacementRoute: typeof SpeakerReplacementRoute
   TrackpadTouchpadReplacementRoute: typeof TrackpadTouchpadReplacementRoute
   VirusRemovalRoute: typeof VirusRemovalRoute
@@ -443,6 +456,13 @@ declare module '@tanstack/react-router' {
       path: '/speaker-replacement'
       fullPath: '/speaker-replacement'
       preLoaderRoute: typeof SpeakerReplacementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/screen-replacement': {
@@ -665,6 +685,7 @@ const rootRouteChildren: RootRouteChildren = {
   RamReplacementRoute: RamReplacementRoute,
   ScreenLcdReplacementRoute: ScreenLcdReplacementRoute,
   ScreenReplacementRoute: ScreenReplacementRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   SpeakerReplacementRoute: SpeakerReplacementRoute,
   TrackpadTouchpadReplacementRoute: TrackpadTouchpadReplacementRoute,
   VirusRemovalRoute: VirusRemovalRoute,
