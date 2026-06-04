@@ -8,7 +8,6 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-border/60 bg-secondary/40">
       <div className="container-px mx-auto grid max-w-7xl gap-12 py-16 md:grid-cols-4">
         <div className="md:col-span-1">
-          <div className="text-lg font-semibold tracking-tight"></div>
           <div className="text-lg font-semibold tracking-tight">{SITE.name}</div>
           <p className="mt-3 text-sm text-muted-foreground">{SITE.tagline}</p>
           <div className="mt-5 space-y-2 text-sm">
