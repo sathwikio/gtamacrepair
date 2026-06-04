@@ -10,12 +10,18 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as OurServicesRouteImport } from './routes/our-services'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutUsRouteImport } from './routes/about-us'
 import { Route as IndexRouteImport } from './routes/index'
 
 const OurServicesRoute = OurServicesRouteImport.update({
   id: '/our-services',
   path: '/our-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutUsRoute = AboutUsRouteImport.update({
@@ -32,30 +38,34 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about-us': typeof AboutUsRoute
+  '/contact': typeof ContactRoute
   '/our-services': typeof OurServicesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about-us': typeof AboutUsRoute
+  '/contact': typeof ContactRoute
   '/our-services': typeof OurServicesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about-us': typeof AboutUsRoute
+  '/contact': typeof ContactRoute
   '/our-services': typeof OurServicesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about-us' | '/our-services'
+  fullPaths: '/' | '/about-us' | '/contact' | '/our-services'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about-us' | '/our-services'
-  id: '__root__' | '/' | '/about-us' | '/our-services'
+  to: '/' | '/about-us' | '/contact' | '/our-services'
+  id: '__root__' | '/' | '/about-us' | '/contact' | '/our-services'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutUsRoute: typeof AboutUsRoute
+  ContactRoute: typeof ContactRoute
   OurServicesRoute: typeof OurServicesRoute
 }
 
@@ -66,6 +76,13 @@ declare module '@tanstack/react-router' {
       path: '/our-services'
       fullPath: '/our-services'
       preLoaderRoute: typeof OurServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about-us': {
@@ -88,6 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutUsRoute: AboutUsRoute,
+  ContactRoute: ContactRoute,
   OurServicesRoute: OurServicesRoute,
 }
 export const routeTree = rootRouteImport
