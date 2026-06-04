@@ -8,9 +8,9 @@ import { SITE, SERVICES } from "@/lib/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "GTA Mac Repair — Mac specialists across the Greater Toronto Area" },
+      { title: "GTA Mac Repair  -  Mac specialists across the Greater Toronto Area" },
       { name: "description", content: "Mac-only repair specialists with 12+ years of experience. Free diagnostics, 90-day warranty, no fix no charge. 8 locations across the GTA." },
-      { property: "og:title", content: "GTA Mac Repair — Mac specialists across the GTA" },
+      { property: "og:title", content: "GTA Mac Repair  -  Mac specialists across the GTA" },
       { property: "og:description", content: "Free diagnostics. 90-day warranty. No fix, no charge. 8 GTA locations." },
     ],
   }),
@@ -33,7 +33,7 @@ function Index() {
           </h1>
           <p className="max-w-2xl text-lg text-muted-foreground md:text-xl">
             Twelve years of focused experience. Eight locations across the Greater Toronto Area.
-            Free diagnostic, transparent quote, 90-day warranty — and no fix, no charge.
+            Free diagnostic, transparent quote, 90-day warranty  -  and no fix, no charge.
           </p>
           <div className="mt-2 flex flex-wrap gap-3">
             <Link to="/book-online" className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background hover:opacity-90">
@@ -67,7 +67,7 @@ function Index() {
           <div>
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">Every Mac. Every repair.</h2>
             <p className="mt-3 max-w-2xl text-muted-foreground">
-              From spilled coffee to dead logic boards, we fix MacBook, MacBook Pro, MacBook Air, iMac, and Mac mini — 2009 through today.
+              From spilled coffee to dead logic boards, we fix MacBook, MacBook Pro, MacBook Air, iMac, and Mac mini  -  2009 through today.
             </p>
           </div>
           <Link to="/our-services" className="hidden shrink-0 text-sm text-muted-foreground hover:text-foreground md:inline-flex">
@@ -98,7 +98,7 @@ function Index() {
           {[
             { n: "01", t: "Get in touch", d: "Call, email, or book online. Tell us about your Mac." },
             { n: "02", t: "Free diagnostic", d: "We diagnose within one business day and send a transparent quote." },
-            { n: "03", t: "Repaired & returned", d: "We finish the repair, you pick up or we ship — covered by a 90-day warranty." },
+            { n: "03", t: "Repaired & returned", d: "We finish the repair, you pick up or we ship  -  covered by a 90-day warranty." },
           ].map((s) => (
             <div key={s.n} className="rounded-3xl border border-border bg-card p-8">
               <div className="text-sm font-mono text-muted-foreground">{s.n}</div>
@@ -115,7 +115,7 @@ function Index() {
           <div>
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">Why Mac owners across the GTA choose us.</h2>
             <p className="mt-4 text-muted-foreground">
-              We aren't a generalist computer shop. Macs are all we do — and that focus shows up in every repair we send out the door.
+              We aren't a generalist computer shop. Macs are all we do  -  and that focus shows up in every repair we send out the door.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">

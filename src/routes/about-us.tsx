@@ -19,7 +19,7 @@ function AboutPage() {
       <section className="container-px mx-auto max-w-4xl pt-20 pb-12 md:pt-28">
         <h1 className="text-5xl font-semibold tracking-tight md:text-7xl">A network built around one thing: Macs.</h1>
         <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-          We started as a single repair bench and grew into a network of eight shops across the GTA. We've stayed focused on Apple hardware the entire time — every technician, every tool, every part.
+          We started as a single repair bench and grew into a network of eight shops across the GTA. We've stayed focused on Apple hardware the entire time  -  every technician, every tool, every part.
         </p>
       </section>
       <section className="container-px mx-auto grid max-w-4xl gap-10 py-12 md:grid-cols-2">
