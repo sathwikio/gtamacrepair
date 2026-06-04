@@ -9,15 +9,162 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VirusRemovalRouteImport } from './routes/virus-removal'
+import { Route as TrackpadTouchpadReplacementRouteImport } from './routes/trackpad-touchpad-replacement'
+import { Route as SpeakerReplacementRouteImport } from './routes/speaker-replacement'
+import { Route as ScreenReplacementRouteImport } from './routes/screen-replacement'
+import { Route as ScreenLcdReplacementRouteImport } from './routes/screen-lcd-replacement'
+import { Route as RamReplacementRouteImport } from './routes/ram-replacement'
+import { Route as PowerSupplyRepairRouteImport } from './routes/power-supply-repair'
 import { Route as OurServicesRouteImport } from './routes/our-services'
+import { Route as MotherboardRepairRouteImport } from './routes/motherboard-repair'
+import { Route as MacbookRamUpgradeRouteImport } from './routes/macbook-ram-upgrade'
+import { Route as MacbookProUpgradesRouteImport } from './routes/macbook-pro-upgrades'
+import { Route as MacbookAirUpgradesRouteImport } from './routes/macbook-air-upgrades'
+import { Route as MacbookAirRouteImport } from './routes/macbook-air'
+import { Route as LogicboardMotherboardRepairRouteImport } from './routes/logicboard-motherboard-repair'
+import { Route as LiquidDamageRouteImport } from './routes/liquid-damage'
+import { Route as KeyboardReplacementRouteImport } from './routes/keyboard-replacement'
+import { Route as ImacUpgradesRouteImport } from './routes/imac-upgrades'
+import { Route as ImacCpuGpuUpgradeRouteImport } from './routes/imac-cpu-gpu-upgrade'
+import { Route as HardDriveReplacement1RouteImport } from './routes/hard-drive-replacement-1'
+import { Route as HardDriveReplacementRouteImport } from './routes/hard-drive-replacement'
+import { Route as GraphicCardRepairRouteImport } from './routes/graphic-card-repair'
+import { Route as GpuRepairRouteImport } from './routes/gpu-repair'
+import { Route as DataRecovery1RouteImport } from './routes/data-recovery-1'
+import { Route as DataRecoveryRouteImport } from './routes/data-recovery'
+import { Route as CpuGpuReplacementRouteImport } from './routes/cpu-gpu-replacement'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BookOnlineRouteImport } from './routes/book-online'
+import { Route as BatteryReplacementRouteImport } from './routes/battery-replacement'
 import { Route as AboutUsRouteImport } from './routes/about-us'
 import { Route as IndexRouteImport } from './routes/index'
 
+const VirusRemovalRoute = VirusRemovalRouteImport.update({
+  id: '/virus-removal',
+  path: '/virus-removal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TrackpadTouchpadReplacementRoute =
+  TrackpadTouchpadReplacementRouteImport.update({
+    id: '/trackpad-touchpad-replacement',
+    path: '/trackpad-touchpad-replacement',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SpeakerReplacementRoute = SpeakerReplacementRouteImport.update({
+  id: '/speaker-replacement',
+  path: '/speaker-replacement',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ScreenReplacementRoute = ScreenReplacementRouteImport.update({
+  id: '/screen-replacement',
+  path: '/screen-replacement',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ScreenLcdReplacementRoute = ScreenLcdReplacementRouteImport.update({
+  id: '/screen-lcd-replacement',
+  path: '/screen-lcd-replacement',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RamReplacementRoute = RamReplacementRouteImport.update({
+  id: '/ram-replacement',
+  path: '/ram-replacement',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PowerSupplyRepairRoute = PowerSupplyRepairRouteImport.update({
+  id: '/power-supply-repair',
+  path: '/power-supply-repair',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const OurServicesRoute = OurServicesRouteImport.update({
   id: '/our-services',
   path: '/our-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MotherboardRepairRoute = MotherboardRepairRouteImport.update({
+  id: '/motherboard-repair',
+  path: '/motherboard-repair',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MacbookRamUpgradeRoute = MacbookRamUpgradeRouteImport.update({
+  id: '/macbook-ram-upgrade',
+  path: '/macbook-ram-upgrade',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MacbookProUpgradesRoute = MacbookProUpgradesRouteImport.update({
+  id: '/macbook-pro-upgrades',
+  path: '/macbook-pro-upgrades',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MacbookAirUpgradesRoute = MacbookAirUpgradesRouteImport.update({
+  id: '/macbook-air-upgrades',
+  path: '/macbook-air-upgrades',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MacbookAirRoute = MacbookAirRouteImport.update({
+  id: '/macbook-air',
+  path: '/macbook-air',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LogicboardMotherboardRepairRoute =
+  LogicboardMotherboardRepairRouteImport.update({
+    id: '/logicboard-motherboard-repair',
+    path: '/logicboard-motherboard-repair',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LiquidDamageRoute = LiquidDamageRouteImport.update({
+  id: '/liquid-damage',
+  path: '/liquid-damage',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KeyboardReplacementRoute = KeyboardReplacementRouteImport.update({
+  id: '/keyboard-replacement',
+  path: '/keyboard-replacement',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImacUpgradesRoute = ImacUpgradesRouteImport.update({
+  id: '/imac-upgrades',
+  path: '/imac-upgrades',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImacCpuGpuUpgradeRoute = ImacCpuGpuUpgradeRouteImport.update({
+  id: '/imac-cpu-gpu-upgrade',
+  path: '/imac-cpu-gpu-upgrade',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HardDriveReplacement1Route = HardDriveReplacement1RouteImport.update({
+  id: '/hard-drive-replacement-1',
+  path: '/hard-drive-replacement-1',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HardDriveReplacementRoute = HardDriveReplacementRouteImport.update({
+  id: '/hard-drive-replacement',
+  path: '/hard-drive-replacement',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GraphicCardRepairRoute = GraphicCardRepairRouteImport.update({
+  id: '/graphic-card-repair',
+  path: '/graphic-card-repair',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GpuRepairRoute = GpuRepairRouteImport.update({
+  id: '/gpu-repair',
+  path: '/gpu-repair',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DataRecovery1Route = DataRecovery1RouteImport.update({
+  id: '/data-recovery-1',
+  path: '/data-recovery-1',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DataRecoveryRoute = DataRecoveryRouteImport.update({
+  id: '/data-recovery',
+  path: '/data-recovery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CpuGpuReplacementRoute = CpuGpuReplacementRouteImport.update({
+  id: '/cpu-gpu-replacement',
+  path: '/cpu-gpu-replacement',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -28,6 +175,11 @@ const ContactRoute = ContactRouteImport.update({
 const BookOnlineRoute = BookOnlineRouteImport.update({
   id: '/book-online',
   path: '/book-online',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BatteryReplacementRoute = BatteryReplacementRouteImport.update({
+  id: '/battery-replacement',
+  path: '/battery-replacement',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutUsRoute = AboutUsRouteImport.update({
@@ -44,54 +196,407 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about-us': typeof AboutUsRoute
+  '/battery-replacement': typeof BatteryReplacementRoute
   '/book-online': typeof BookOnlineRoute
   '/contact': typeof ContactRoute
+  '/cpu-gpu-replacement': typeof CpuGpuReplacementRoute
+  '/data-recovery': typeof DataRecoveryRoute
+  '/data-recovery-1': typeof DataRecovery1Route
+  '/gpu-repair': typeof GpuRepairRoute
+  '/graphic-card-repair': typeof GraphicCardRepairRoute
+  '/hard-drive-replacement': typeof HardDriveReplacementRoute
+  '/hard-drive-replacement-1': typeof HardDriveReplacement1Route
+  '/imac-cpu-gpu-upgrade': typeof ImacCpuGpuUpgradeRoute
+  '/imac-upgrades': typeof ImacUpgradesRoute
+  '/keyboard-replacement': typeof KeyboardReplacementRoute
+  '/liquid-damage': typeof LiquidDamageRoute
+  '/logicboard-motherboard-repair': typeof LogicboardMotherboardRepairRoute
+  '/macbook-air': typeof MacbookAirRoute
+  '/macbook-air-upgrades': typeof MacbookAirUpgradesRoute
+  '/macbook-pro-upgrades': typeof MacbookProUpgradesRoute
+  '/macbook-ram-upgrade': typeof MacbookRamUpgradeRoute
+  '/motherboard-repair': typeof MotherboardRepairRoute
   '/our-services': typeof OurServicesRoute
+  '/power-supply-repair': typeof PowerSupplyRepairRoute
+  '/ram-replacement': typeof RamReplacementRoute
+  '/screen-lcd-replacement': typeof ScreenLcdReplacementRoute
+  '/screen-replacement': typeof ScreenReplacementRoute
+  '/speaker-replacement': typeof SpeakerReplacementRoute
+  '/trackpad-touchpad-replacement': typeof TrackpadTouchpadReplacementRoute
+  '/virus-removal': typeof VirusRemovalRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about-us': typeof AboutUsRoute
+  '/battery-replacement': typeof BatteryReplacementRoute
   '/book-online': typeof BookOnlineRoute
   '/contact': typeof ContactRoute
+  '/cpu-gpu-replacement': typeof CpuGpuReplacementRoute
+  '/data-recovery': typeof DataRecoveryRoute
+  '/data-recovery-1': typeof DataRecovery1Route
+  '/gpu-repair': typeof GpuRepairRoute
+  '/graphic-card-repair': typeof GraphicCardRepairRoute
+  '/hard-drive-replacement': typeof HardDriveReplacementRoute
+  '/hard-drive-replacement-1': typeof HardDriveReplacement1Route
+  '/imac-cpu-gpu-upgrade': typeof ImacCpuGpuUpgradeRoute
+  '/imac-upgrades': typeof ImacUpgradesRoute
+  '/keyboard-replacement': typeof KeyboardReplacementRoute
+  '/liquid-damage': typeof LiquidDamageRoute
+  '/logicboard-motherboard-repair': typeof LogicboardMotherboardRepairRoute
+  '/macbook-air': typeof MacbookAirRoute
+  '/macbook-air-upgrades': typeof MacbookAirUpgradesRoute
+  '/macbook-pro-upgrades': typeof MacbookProUpgradesRoute
+  '/macbook-ram-upgrade': typeof MacbookRamUpgradeRoute
+  '/motherboard-repair': typeof MotherboardRepairRoute
   '/our-services': typeof OurServicesRoute
+  '/power-supply-repair': typeof PowerSupplyRepairRoute
+  '/ram-replacement': typeof RamReplacementRoute
+  '/screen-lcd-replacement': typeof ScreenLcdReplacementRoute
+  '/screen-replacement': typeof ScreenReplacementRoute
+  '/speaker-replacement': typeof SpeakerReplacementRoute
+  '/trackpad-touchpad-replacement': typeof TrackpadTouchpadReplacementRoute
+  '/virus-removal': typeof VirusRemovalRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about-us': typeof AboutUsRoute
+  '/battery-replacement': typeof BatteryReplacementRoute
   '/book-online': typeof BookOnlineRoute
   '/contact': typeof ContactRoute
+  '/cpu-gpu-replacement': typeof CpuGpuReplacementRoute
+  '/data-recovery': typeof DataRecoveryRoute
+  '/data-recovery-1': typeof DataRecovery1Route
+  '/gpu-repair': typeof GpuRepairRoute
+  '/graphic-card-repair': typeof GraphicCardRepairRoute
+  '/hard-drive-replacement': typeof HardDriveReplacementRoute
+  '/hard-drive-replacement-1': typeof HardDriveReplacement1Route
+  '/imac-cpu-gpu-upgrade': typeof ImacCpuGpuUpgradeRoute
+  '/imac-upgrades': typeof ImacUpgradesRoute
+  '/keyboard-replacement': typeof KeyboardReplacementRoute
+  '/liquid-damage': typeof LiquidDamageRoute
+  '/logicboard-motherboard-repair': typeof LogicboardMotherboardRepairRoute
+  '/macbook-air': typeof MacbookAirRoute
+  '/macbook-air-upgrades': typeof MacbookAirUpgradesRoute
+  '/macbook-pro-upgrades': typeof MacbookProUpgradesRoute
+  '/macbook-ram-upgrade': typeof MacbookRamUpgradeRoute
+  '/motherboard-repair': typeof MotherboardRepairRoute
   '/our-services': typeof OurServicesRoute
+  '/power-supply-repair': typeof PowerSupplyRepairRoute
+  '/ram-replacement': typeof RamReplacementRoute
+  '/screen-lcd-replacement': typeof ScreenLcdReplacementRoute
+  '/screen-replacement': typeof ScreenReplacementRoute
+  '/speaker-replacement': typeof SpeakerReplacementRoute
+  '/trackpad-touchpad-replacement': typeof TrackpadTouchpadReplacementRoute
+  '/virus-removal': typeof VirusRemovalRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about-us' | '/book-online' | '/contact' | '/our-services'
+  fullPaths:
+    | '/'
+    | '/about-us'
+    | '/battery-replacement'
+    | '/book-online'
+    | '/contact'
+    | '/cpu-gpu-replacement'
+    | '/data-recovery'
+    | '/data-recovery-1'
+    | '/gpu-repair'
+    | '/graphic-card-repair'
+    | '/hard-drive-replacement'
+    | '/hard-drive-replacement-1'
+    | '/imac-cpu-gpu-upgrade'
+    | '/imac-upgrades'
+    | '/keyboard-replacement'
+    | '/liquid-damage'
+    | '/logicboard-motherboard-repair'
+    | '/macbook-air'
+    | '/macbook-air-upgrades'
+    | '/macbook-pro-upgrades'
+    | '/macbook-ram-upgrade'
+    | '/motherboard-repair'
+    | '/our-services'
+    | '/power-supply-repair'
+    | '/ram-replacement'
+    | '/screen-lcd-replacement'
+    | '/screen-replacement'
+    | '/speaker-replacement'
+    | '/trackpad-touchpad-replacement'
+    | '/virus-removal'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about-us' | '/book-online' | '/contact' | '/our-services'
+  to:
+    | '/'
+    | '/about-us'
+    | '/battery-replacement'
+    | '/book-online'
+    | '/contact'
+    | '/cpu-gpu-replacement'
+    | '/data-recovery'
+    | '/data-recovery-1'
+    | '/gpu-repair'
+    | '/graphic-card-repair'
+    | '/hard-drive-replacement'
+    | '/hard-drive-replacement-1'
+    | '/imac-cpu-gpu-upgrade'
+    | '/imac-upgrades'
+    | '/keyboard-replacement'
+    | '/liquid-damage'
+    | '/logicboard-motherboard-repair'
+    | '/macbook-air'
+    | '/macbook-air-upgrades'
+    | '/macbook-pro-upgrades'
+    | '/macbook-ram-upgrade'
+    | '/motherboard-repair'
+    | '/our-services'
+    | '/power-supply-repair'
+    | '/ram-replacement'
+    | '/screen-lcd-replacement'
+    | '/screen-replacement'
+    | '/speaker-replacement'
+    | '/trackpad-touchpad-replacement'
+    | '/virus-removal'
   id:
     | '__root__'
     | '/'
     | '/about-us'
+    | '/battery-replacement'
     | '/book-online'
     | '/contact'
+    | '/cpu-gpu-replacement'
+    | '/data-recovery'
+    | '/data-recovery-1'
+    | '/gpu-repair'
+    | '/graphic-card-repair'
+    | '/hard-drive-replacement'
+    | '/hard-drive-replacement-1'
+    | '/imac-cpu-gpu-upgrade'
+    | '/imac-upgrades'
+    | '/keyboard-replacement'
+    | '/liquid-damage'
+    | '/logicboard-motherboard-repair'
+    | '/macbook-air'
+    | '/macbook-air-upgrades'
+    | '/macbook-pro-upgrades'
+    | '/macbook-ram-upgrade'
+    | '/motherboard-repair'
     | '/our-services'
+    | '/power-supply-repair'
+    | '/ram-replacement'
+    | '/screen-lcd-replacement'
+    | '/screen-replacement'
+    | '/speaker-replacement'
+    | '/trackpad-touchpad-replacement'
+    | '/virus-removal'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutUsRoute: typeof AboutUsRoute
+  BatteryReplacementRoute: typeof BatteryReplacementRoute
   BookOnlineRoute: typeof BookOnlineRoute
   ContactRoute: typeof ContactRoute
+  CpuGpuReplacementRoute: typeof CpuGpuReplacementRoute
+  DataRecoveryRoute: typeof DataRecoveryRoute
+  DataRecovery1Route: typeof DataRecovery1Route
+  GpuRepairRoute: typeof GpuRepairRoute
+  GraphicCardRepairRoute: typeof GraphicCardRepairRoute
+  HardDriveReplacementRoute: typeof HardDriveReplacementRoute
+  HardDriveReplacement1Route: typeof HardDriveReplacement1Route
+  ImacCpuGpuUpgradeRoute: typeof ImacCpuGpuUpgradeRoute
+  ImacUpgradesRoute: typeof ImacUpgradesRoute
+  KeyboardReplacementRoute: typeof KeyboardReplacementRoute
+  LiquidDamageRoute: typeof LiquidDamageRoute
+  LogicboardMotherboardRepairRoute: typeof LogicboardMotherboardRepairRoute
+  MacbookAirRoute: typeof MacbookAirRoute
+  MacbookAirUpgradesRoute: typeof MacbookAirUpgradesRoute
+  MacbookProUpgradesRoute: typeof MacbookProUpgradesRoute
+  MacbookRamUpgradeRoute: typeof MacbookRamUpgradeRoute
+  MotherboardRepairRoute: typeof MotherboardRepairRoute
   OurServicesRoute: typeof OurServicesRoute
+  PowerSupplyRepairRoute: typeof PowerSupplyRepairRoute
+  RamReplacementRoute: typeof RamReplacementRoute
+  ScreenLcdReplacementRoute: typeof ScreenLcdReplacementRoute
+  ScreenReplacementRoute: typeof ScreenReplacementRoute
+  SpeakerReplacementRoute: typeof SpeakerReplacementRoute
+  TrackpadTouchpadReplacementRoute: typeof TrackpadTouchpadReplacementRoute
+  VirusRemovalRoute: typeof VirusRemovalRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/virus-removal': {
+      id: '/virus-removal'
+      path: '/virus-removal'
+      fullPath: '/virus-removal'
+      preLoaderRoute: typeof VirusRemovalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/trackpad-touchpad-replacement': {
+      id: '/trackpad-touchpad-replacement'
+      path: '/trackpad-touchpad-replacement'
+      fullPath: '/trackpad-touchpad-replacement'
+      preLoaderRoute: typeof TrackpadTouchpadReplacementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/speaker-replacement': {
+      id: '/speaker-replacement'
+      path: '/speaker-replacement'
+      fullPath: '/speaker-replacement'
+      preLoaderRoute: typeof SpeakerReplacementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/screen-replacement': {
+      id: '/screen-replacement'
+      path: '/screen-replacement'
+      fullPath: '/screen-replacement'
+      preLoaderRoute: typeof ScreenReplacementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/screen-lcd-replacement': {
+      id: '/screen-lcd-replacement'
+      path: '/screen-lcd-replacement'
+      fullPath: '/screen-lcd-replacement'
+      preLoaderRoute: typeof ScreenLcdReplacementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ram-replacement': {
+      id: '/ram-replacement'
+      path: '/ram-replacement'
+      fullPath: '/ram-replacement'
+      preLoaderRoute: typeof RamReplacementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/power-supply-repair': {
+      id: '/power-supply-repair'
+      path: '/power-supply-repair'
+      fullPath: '/power-supply-repair'
+      preLoaderRoute: typeof PowerSupplyRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/our-services': {
       id: '/our-services'
       path: '/our-services'
       fullPath: '/our-services'
       preLoaderRoute: typeof OurServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/motherboard-repair': {
+      id: '/motherboard-repair'
+      path: '/motherboard-repair'
+      fullPath: '/motherboard-repair'
+      preLoaderRoute: typeof MotherboardRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/macbook-ram-upgrade': {
+      id: '/macbook-ram-upgrade'
+      path: '/macbook-ram-upgrade'
+      fullPath: '/macbook-ram-upgrade'
+      preLoaderRoute: typeof MacbookRamUpgradeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/macbook-pro-upgrades': {
+      id: '/macbook-pro-upgrades'
+      path: '/macbook-pro-upgrades'
+      fullPath: '/macbook-pro-upgrades'
+      preLoaderRoute: typeof MacbookProUpgradesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/macbook-air-upgrades': {
+      id: '/macbook-air-upgrades'
+      path: '/macbook-air-upgrades'
+      fullPath: '/macbook-air-upgrades'
+      preLoaderRoute: typeof MacbookAirUpgradesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/macbook-air': {
+      id: '/macbook-air'
+      path: '/macbook-air'
+      fullPath: '/macbook-air'
+      preLoaderRoute: typeof MacbookAirRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/logicboard-motherboard-repair': {
+      id: '/logicboard-motherboard-repair'
+      path: '/logicboard-motherboard-repair'
+      fullPath: '/logicboard-motherboard-repair'
+      preLoaderRoute: typeof LogicboardMotherboardRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/liquid-damage': {
+      id: '/liquid-damage'
+      path: '/liquid-damage'
+      fullPath: '/liquid-damage'
+      preLoaderRoute: typeof LiquidDamageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/keyboard-replacement': {
+      id: '/keyboard-replacement'
+      path: '/keyboard-replacement'
+      fullPath: '/keyboard-replacement'
+      preLoaderRoute: typeof KeyboardReplacementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/imac-upgrades': {
+      id: '/imac-upgrades'
+      path: '/imac-upgrades'
+      fullPath: '/imac-upgrades'
+      preLoaderRoute: typeof ImacUpgradesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/imac-cpu-gpu-upgrade': {
+      id: '/imac-cpu-gpu-upgrade'
+      path: '/imac-cpu-gpu-upgrade'
+      fullPath: '/imac-cpu-gpu-upgrade'
+      preLoaderRoute: typeof ImacCpuGpuUpgradeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hard-drive-replacement-1': {
+      id: '/hard-drive-replacement-1'
+      path: '/hard-drive-replacement-1'
+      fullPath: '/hard-drive-replacement-1'
+      preLoaderRoute: typeof HardDriveReplacement1RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hard-drive-replacement': {
+      id: '/hard-drive-replacement'
+      path: '/hard-drive-replacement'
+      fullPath: '/hard-drive-replacement'
+      preLoaderRoute: typeof HardDriveReplacementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/graphic-card-repair': {
+      id: '/graphic-card-repair'
+      path: '/graphic-card-repair'
+      fullPath: '/graphic-card-repair'
+      preLoaderRoute: typeof GraphicCardRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gpu-repair': {
+      id: '/gpu-repair'
+      path: '/gpu-repair'
+      fullPath: '/gpu-repair'
+      preLoaderRoute: typeof GpuRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/data-recovery-1': {
+      id: '/data-recovery-1'
+      path: '/data-recovery-1'
+      fullPath: '/data-recovery-1'
+      preLoaderRoute: typeof DataRecovery1RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/data-recovery': {
+      id: '/data-recovery'
+      path: '/data-recovery'
+      fullPath: '/data-recovery'
+      preLoaderRoute: typeof DataRecoveryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cpu-gpu-replacement': {
+      id: '/cpu-gpu-replacement'
+      path: '/cpu-gpu-replacement'
+      fullPath: '/cpu-gpu-replacement'
+      preLoaderRoute: typeof CpuGpuReplacementRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -106,6 +611,13 @@ declare module '@tanstack/react-router' {
       path: '/book-online'
       fullPath: '/book-online'
       preLoaderRoute: typeof BookOnlineRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/battery-replacement': {
+      id: '/battery-replacement'
+      path: '/battery-replacement'
+      fullPath: '/battery-replacement'
+      preLoaderRoute: typeof BatteryReplacementRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about-us': {
@@ -128,10 +640,45 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutUsRoute: AboutUsRoute,
+  BatteryReplacementRoute: BatteryReplacementRoute,
   BookOnlineRoute: BookOnlineRoute,
   ContactRoute: ContactRoute,
+  CpuGpuReplacementRoute: CpuGpuReplacementRoute,
+  DataRecoveryRoute: DataRecoveryRoute,
+  DataRecovery1Route: DataRecovery1Route,
+  GpuRepairRoute: GpuRepairRoute,
+  GraphicCardRepairRoute: GraphicCardRepairRoute,
+  HardDriveReplacementRoute: HardDriveReplacementRoute,
+  HardDriveReplacement1Route: HardDriveReplacement1Route,
+  ImacCpuGpuUpgradeRoute: ImacCpuGpuUpgradeRoute,
+  ImacUpgradesRoute: ImacUpgradesRoute,
+  KeyboardReplacementRoute: KeyboardReplacementRoute,
+  LiquidDamageRoute: LiquidDamageRoute,
+  LogicboardMotherboardRepairRoute: LogicboardMotherboardRepairRoute,
+  MacbookAirRoute: MacbookAirRoute,
+  MacbookAirUpgradesRoute: MacbookAirUpgradesRoute,
+  MacbookProUpgradesRoute: MacbookProUpgradesRoute,
+  MacbookRamUpgradeRoute: MacbookRamUpgradeRoute,
+  MotherboardRepairRoute: MotherboardRepairRoute,
   OurServicesRoute: OurServicesRoute,
+  PowerSupplyRepairRoute: PowerSupplyRepairRoute,
+  RamReplacementRoute: RamReplacementRoute,
+  ScreenLcdReplacementRoute: ScreenLcdReplacementRoute,
+  ScreenReplacementRoute: ScreenReplacementRoute,
+  SpeakerReplacementRoute: SpeakerReplacementRoute,
+  TrackpadTouchpadReplacementRoute: TrackpadTouchpadReplacementRoute,
+  VirusRemovalRoute: VirusRemovalRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
