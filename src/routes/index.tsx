@@ -4,6 +4,8 @@ import { ArrowRight, Phone, ShieldCheck, Clock, MapPin, Wrench, Cpu, HardDrive, 
 import { PageShell } from "@/components/page-shell";
 import { CtaBand } from "@/components/cta-band";
 import { SITE, SERVICES } from "@/lib/site";
+import imacImg from "@/assets/imac.png";
+import macbookAirImg from "@/assets/macbook-air.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
