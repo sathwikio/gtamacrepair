@@ -40,6 +40,7 @@ import { Route as BookOnlineRouteImport } from './routes/book-online'
 import { Route as BatteryReplacementRouteImport } from './routes/battery-replacement'
 import { Route as AboutUsRouteImport } from './routes/about-us'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as DemoMacbookRepairAnatomyRouteImport } from './routes/demo/macbook-repair-anatomy'
 
 const VirusRemovalRoute = VirusRemovalRouteImport.update({
   id: '/virus-removal',
@@ -198,6 +199,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DemoMacbookRepairAnatomyRoute =
+  DemoMacbookRepairAnatomyRouteImport.update({
+    id: '/demo/macbook-repair-anatomy',
+    path: '/demo/macbook-repair-anatomy',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -231,6 +238,7 @@ export interface FileRoutesByFullPath {
   '/speaker-replacement': typeof SpeakerReplacementRoute
   '/trackpad-touchpad-replacement': typeof TrackpadTouchpadReplacementRoute
   '/virus-removal': typeof VirusRemovalRoute
+  '/demo/macbook-repair-anatomy': typeof DemoMacbookRepairAnatomyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -264,6 +272,7 @@ export interface FileRoutesByTo {
   '/speaker-replacement': typeof SpeakerReplacementRoute
   '/trackpad-touchpad-replacement': typeof TrackpadTouchpadReplacementRoute
   '/virus-removal': typeof VirusRemovalRoute
+  '/demo/macbook-repair-anatomy': typeof DemoMacbookRepairAnatomyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -298,6 +307,7 @@ export interface FileRoutesById {
   '/speaker-replacement': typeof SpeakerReplacementRoute
   '/trackpad-touchpad-replacement': typeof TrackpadTouchpadReplacementRoute
   '/virus-removal': typeof VirusRemovalRoute
+  '/demo/macbook-repair-anatomy': typeof DemoMacbookRepairAnatomyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -333,6 +343,7 @@ export interface FileRouteTypes {
     | '/speaker-replacement'
     | '/trackpad-touchpad-replacement'
     | '/virus-removal'
+    | '/demo/macbook-repair-anatomy'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -366,6 +377,7 @@ export interface FileRouteTypes {
     | '/speaker-replacement'
     | '/trackpad-touchpad-replacement'
     | '/virus-removal'
+    | '/demo/macbook-repair-anatomy'
   id:
     | '__root__'
     | '/'
@@ -399,6 +411,7 @@ export interface FileRouteTypes {
     | '/speaker-replacement'
     | '/trackpad-touchpad-replacement'
     | '/virus-removal'
+    | '/demo/macbook-repair-anatomy'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -433,6 +446,7 @@ export interface RootRouteChildren {
   SpeakerReplacementRoute: typeof SpeakerReplacementRoute
   TrackpadTouchpadReplacementRoute: typeof TrackpadTouchpadReplacementRoute
   VirusRemovalRoute: typeof VirusRemovalRoute
+  DemoMacbookRepairAnatomyRoute: typeof DemoMacbookRepairAnatomyRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -654,6 +668,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/demo/macbook-repair-anatomy': {
+      id: '/demo/macbook-repair-anatomy'
+      path: '/demo/macbook-repair-anatomy'
+      fullPath: '/demo/macbook-repair-anatomy'
+      preLoaderRoute: typeof DemoMacbookRepairAnatomyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -689,6 +710,7 @@ const rootRouteChildren: RootRouteChildren = {
   SpeakerReplacementRoute: SpeakerReplacementRoute,
   TrackpadTouchpadReplacementRoute: TrackpadTouchpadReplacementRoute,
   VirusRemovalRoute: VirusRemovalRoute,
+  DemoMacbookRepairAnatomyRoute: DemoMacbookRepairAnatomyRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
