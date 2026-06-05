@@ -48,14 +48,14 @@ function Index() {
             </div>
           </div>
 
-          <div className="relative hidden md:block">
-            <div className="relative mx-auto w-full max-w-lg">
+          <div className="relative mt-2 w-full overflow-hidden pt-2 pb-10 md:mt-0 md:block md:overflow-visible md:pt-0 md:pb-0">
+            <div className="relative mx-auto w-full max-w-[20rem] sm:max-w-sm md:max-w-lg">
               <img
                 src={imacImg}
                 alt="Apple iMac"
                 width={400}
                 height={400}
-                className="relative z-10 mx-auto drop-shadow-2xl"
+                className="relative z-10 mx-auto h-auto w-full max-w-[18rem] drop-shadow-2xl sm:max-w-xs md:w-auto md:max-w-none"
                 loading="eager"
               />
               <img
@@ -63,7 +63,7 @@ function Index() {
                 alt="Apple MacBook Air"
                 width={320}
                 height={320}
-                className="absolute -bottom-8 -right-4 z-20 w-2/3 drop-shadow-xl"
+                className="absolute -bottom-7 right-1/2 z-20 h-auto w-[68%] max-w-[14rem] translate-x-1/2 drop-shadow-xl sm:-bottom-8 md:-right-4 md:w-2/3 md:max-w-none md:translate-x-0"
                 loading="eager"
               />
             </div>
