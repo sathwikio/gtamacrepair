@@ -48,14 +48,14 @@ function Index() {
             </div>
           </div>
 
-          <div className="relative mt-2 w-full min-w-0 overflow-hidden pt-2 pb-10 md:mt-0 md:block md:pt-0 md:pb-0">
-            <div className="relative mx-auto w-full max-w-[20rem] sm:max-w-sm md:max-w-[28rem]">
+          <div className="relative mt-2 w-full min-w-0 overflow-hidden py-2 md:mt-0 md:block md:py-0">
+            <div className="relative mx-auto w-full max-w-[24rem] sm:max-w-[30rem] md:max-w-[34rem]">
               <img
                 src={imacImg}
                 alt="Apple iMac"
                 width={400}
                 height={400}
-                className="relative z-10 mx-auto h-auto w-full max-w-[18rem] drop-shadow-2xl sm:max-w-xs md:w-full md:max-w-[25rem]"
+                className="relative left-1/2 z-10 h-auto w-[118%] max-w-none -translate-x-1/2 drop-shadow-2xl sm:w-[124%] md:w-[130%]"
                 loading="eager"
               />
               <img
@@ -63,7 +63,7 @@ function Index() {
                 alt="Apple MacBook Air"
                 width={320}
                 height={320}
-                className="absolute -bottom-7 right-1/2 z-20 h-auto w-[68%] max-w-[14rem] translate-x-1/2 drop-shadow-xl sm:-bottom-8 md:bottom-0 md:right-0 md:w-2/3 md:max-w-[18rem] md:translate-x-0"
+                className="absolute -bottom-5 right-1/2 z-20 h-auto w-[54%] max-w-[12rem] translate-x-1/2 drop-shadow-xl sm:-bottom-6 sm:max-w-[13rem] md:-bottom-2 md:right-2 md:w-[52%] md:max-w-[16rem] md:translate-x-0"
                 loading="eager"
               />
             </div>
