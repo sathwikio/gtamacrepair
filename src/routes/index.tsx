@@ -26,8 +26,8 @@ function Index() {
     <PageShell>
       {/* HERO */}
       <section className="container-px mx-auto max-w-7xl pt-20 pb-16 md:pt-32 md:pb-24">
-        <div className="grid items-center gap-12 md:grid-cols-2 md:gap-8">
-          <div className="flex flex-col items-start gap-6">
+        <div className="grid min-w-0 items-center gap-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-8">
+          <div className="min-w-0 flex flex-col items-start gap-6">
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
               <span className="size-1.5 rounded-full bg-emerald-500" /> Open today · Free diagnostics
             </span>
@@ -48,14 +48,14 @@ function Index() {
             </div>
           </div>
 
-          <div className="relative mt-2 w-full overflow-hidden pt-2 pb-10 md:mt-0 md:block md:overflow-visible md:pt-0 md:pb-0">
-            <div className="relative mx-auto w-full max-w-[20rem] sm:max-w-sm md:max-w-lg">
+          <div className="relative mt-2 w-full min-w-0 overflow-hidden pt-2 pb-10 md:mt-0 md:block md:pt-0 md:pb-0">
+            <div className="relative mx-auto w-full max-w-[20rem] sm:max-w-sm md:max-w-[28rem]">
               <img
                 src={imacImg}
                 alt="Apple iMac"
                 width={400}
                 height={400}
-                className="relative z-10 mx-auto h-auto w-full max-w-[18rem] drop-shadow-2xl sm:max-w-xs md:w-auto md:max-w-none"
+                className="relative z-10 mx-auto h-auto w-full max-w-[18rem] drop-shadow-2xl sm:max-w-xs md:w-full md:max-w-[25rem]"
                 loading="eager"
               />
               <img
@@ -63,7 +63,7 @@ function Index() {
                 alt="Apple MacBook Air"
                 width={320}
                 height={320}
-                className="absolute -bottom-7 right-1/2 z-20 h-auto w-[68%] max-w-[14rem] translate-x-1/2 drop-shadow-xl sm:-bottom-8 md:-right-4 md:w-2/3 md:max-w-none md:translate-x-0"
+                className="absolute -bottom-7 right-1/2 z-20 h-auto w-[68%] max-w-[14rem] translate-x-1/2 drop-shadow-xl sm:-bottom-8 md:bottom-0 md:right-0 md:w-2/3 md:max-w-[18rem] md:translate-x-0"
                 loading="eager"
               />
             </div>
